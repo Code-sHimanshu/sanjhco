@@ -1,0 +1,226 @@
+/* Base Styles */
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: var(--black);
+    background: var(--white);
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.category-card {
+    text-align: center;
+    width: 30%;
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Shop Page Styles */
+.shop {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Product Page Styles */
+.product-details {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+}
+
+.product-images {
+    flex: 1;
+}
+
+#main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.thumbnail-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumbnail-grid img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.search-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Auth/Account Styles */
+.auth-container, .account-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
